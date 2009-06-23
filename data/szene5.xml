@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Part name="root">
+	
+	<Translate name="cube_pos" tx="-5.0" ty="0.0" tz="0.0">
+		<Jumper name="jumper" tx="0.0" ty="0.0" tz="0.0" speed="1" on="true">
+			<Cube name="cube" farbe="blue" size="1.5"/>
+		</Jumper>
+	</Translate>
+	<Translate name="sphere_pos" tx="5.0" ty="0.0" tz="0.0">
+		<Rotor name="rotor_sphere" winkel="0.0" rx="1.0" ry="1.0" rz="1.0" speed="50.0" on="true">
+			<Sphere name="sphere" farbe="red" radius="1.0"/>
+		</Rotor>
+	</Translate>
+	<Translate name="light_pos" tx="0.0" ty="2.0" tz="0.0">
+		<Rotor name="rotor_light" winkel="0.0" rx="1.0" ry="0.0" rz="0.0" speed="-30" on="true"> 
+			<Light name="light" index="0" on="true" intensity="0.6" position="0.0"/>
+		</Rotor>
+	</Translate>
+	<Rotor name="rotor_teapot" winkel="0.0" rx="1.0" ry="0.0" rz="0.0" speed="50" on="true">
+		<Teapot name="teapot" farbe="green" size="1.0"/>
+	</Rotor>
+	<Translate name="floor_pos" tx="0.0" ty="-2.0" tz="0.0">
+		<Floor name="floor" farbe="white"/>
+	</Translate>
+	<Translate name="cube2_pos" tx="-2" ty="-1.0" tz="4.0">
+		<Driving name="driving" tx="0.0" ty="0.0" tz="0.0" winkel="0.0" rx="0.0" ry="1.0" rz="0.0" on="true">
+				<Translate name="camera_pos" tx="0.0" ty="1.0" tz="3.0">
+					<Camera name="camera" on="true" fov="45.0"/>
+				</Translate>
+			<Cube name="cube2" farbe="purple" size="1.0"/>
+		</Driving>
+	</Translate>
+</Part>
